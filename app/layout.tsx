@@ -18,11 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        <SideDrawer />
-        <div className='p-2'>
-          {children}
+      <body className={`${inter.className}`}>
+        <Navbar />        
+        <div className='flex flex-row'>
+          <SideDrawer />
+          <div className='w-full bg-[#F5F9FF] p-4 overflow-y-auto'>
+            {children}
+          </div>          
         </div>        
       </body>
     </html>
