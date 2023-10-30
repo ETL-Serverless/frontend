@@ -22,7 +22,7 @@ export default function RootLayout({
         <Navbar />        
         <div className='flex flex-row'>
           <SideDrawer />
-          <div className='w-full bg-[#F5F9FF] p-4 overflow-y-auto'>
+          <div className='w-full bg-[#F5F9FF] p-4 h-[90vh] overflow-y-auto'>
             {children}
           </div>          
         </div>        
